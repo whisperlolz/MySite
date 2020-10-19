@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/font-svg.css">
     <title>MySite</title>
@@ -16,7 +17,7 @@
                 <div class="header_contacts">
                 <a class="header_phone" href="tel:+48791764737">+48 791 764 737</a>
                 <a class="header_email" href="#">kyrylokondrashov@gmail.com</a>
-                <a class="header_btn" href="#">Darmowa konsultacja !</a>
+                <a data-fancybox data-src="#modal" href="javascript:;" class="header_btn" href="#">Darmowa konsultacja !</a>
             </div>
             </div>
         </div>
@@ -31,6 +32,7 @@
     <nav class="menu">
         <ul>
             <li><a href="#">O mnie</a></li>
+            <li><a href="#">Umiejętności</a></li>
             <li><a href="#">Projekty</a></li>
             <li><a href="#">Kontakt</a></li>
         </ul>
@@ -39,5 +41,44 @@
     </div>
 </div>
     </header>
+
+<section class="welcome">
+    <div class="container">
+        <div class="welcome_content">
+        <div class="welcome_img">
+            <img src="/img/Programmist.jpg" alt="#">
+        </div>
+        <div class="welcome_cloud">
+            <div class="welcome_cloud_text">
+                <h1>Cześć! </h1>
+                <h2>JESTEM KYRYLO KONDRASHOV </h2>
+                <p>JUNIOR FRONT-END DEVELOPER</p>
+                <p>ZAPRASZAM DO WSPÓLPRACY</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+<!-- OKNO -->
+    <div id="modal">
+        <div class="window_ank">
+            <div class="window_ank_text">
+                <h1>Aloha ! </h1>
+                <p>Spodobalo się moję portfolio - napisz do mnie ! </p>
+                <div class="window_ank_log">
+                    <img src="/img/tproger.jpg" alt="#">
+                </div>
+            </div>
+
+        </div>
+      </div>
+<!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+<!--  -->
 </body>
 </html>
