@@ -297,17 +297,15 @@ header {
 }
 
 .aboutMe .aboutMe_content {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .aboutMe .aboutMe_text {
-
   text-align: justify;
   padding: 20px;
-  max-width: 50%;
-  float: left;
+  max-width: 100%;
+  max-height: 300px;
   background-color: #fff;
   border-radius: 2%;
   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
@@ -315,7 +313,7 @@ header {
 
 .aboutMe .aboutMe_photo {
   float: right;
-  max-width: 45%;
+  max-width: 100%;
 }
 
 .aboutMe .aboutMe_photo img {
@@ -334,12 +332,15 @@ header {
 .skills .skills_content {
   max-width: 100%;
   padding: 60px 0 60px 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 
 }
 
 .skills .skills_content .skills_text {
   float: right;
-  max-width: 45%;
+  max-width: 100%;
+  padding-left: 20px;
   text-align: justify;
 }
 
@@ -378,10 +379,10 @@ header {
 
 .skills .skills_content .skills_box {
   float: left;
-  max-width: 45%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
 }
 
 .skills .skills_content .skills_box .box img {
@@ -403,7 +404,7 @@ header {
 }
 
 .projects_content_box {
-  margin: 0 50px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(120px, auto);
@@ -458,7 +459,6 @@ footer .contact_content {
   
 }
 footer .contact_content .contact_text{
-  margin: 0 auto;
   color: #fff;
 }
 footer .contact_content .contact_text a{
