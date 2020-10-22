@@ -10,6 +10,7 @@
     let skills = document.querySelector('.skills');
     let skillsText = skills.querySelector('.skills_text');
     let projects = document.querySelector('.projects');
+    let contact = document.querySelector('footer')
 
 
         $(window).scroll(function () {
@@ -29,7 +30,7 @@
     let siteNav = function (etc, content){
         $(etc).click(function () {
             console.log(content.offsetTop + ' ' + header.offsetHeight + ' ' + headerTop.offsetHeight);
-            let b = content.offsetTop - header.offsetHeight - headerTop.offsetHeight + 10;
+            let b = content.offsetTop - header.offsetHeight - headerTop.offsetHeight + 20;
             window.scrollTo(0, b);
             
         });    
@@ -39,7 +40,8 @@
     siteNav('#aboutMe', aboutMe);
     siteNav('#skills', skills);
     siteNav('#projects', projects);
-    siteNav('#contacts', skills);
+    siteNav('#contacts', contact);
+    
 
     
     
