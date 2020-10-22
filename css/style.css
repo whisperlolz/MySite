@@ -42,7 +42,7 @@ header {
 
 
 .header_top .header_btn {
-  padding: 5px 20px 4px 50px;
+  padding: 5px 30px 4px 30px;
   float: right;
   font-size: 16px;
   line-height: 36px;
@@ -71,22 +71,38 @@ header {
 
 .header_top .header_phone::before {
   font-family: 'icomoon';
-  content: "\e900";
-  position: absolute;
-  left: 0;
-  color: #ffc222;
-}
-
-.header_top .header_email::before {
-  font-family: 'icomoon';
   content: "\e901";
   position: absolute;
   left: 0;
   color: #ffc222;
+  padding-right: 5px;
 }
 
+.header_top .header_email::before {
+  font-family: 'icomoon';
+  content: "\e902";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+  padding-right: 5px;
+}
+
+.header_top .header_btn{
+  font-weight: 700;
+}
+.header_top .header_btn::before {
+  font-family: 'icomoon';
+  content: "\e900";
+  padding-right: 5px;
+}
+.header_top .header_btn:hover{
+  background-color: red;
+ 
+  font-weight: 700;
+}
 .header_top .header_email {
   padding-left: 24px;
+  
 }
 
 .header_content {
@@ -118,7 +134,8 @@ header {
   display: inline;
 }
 
-.header_content .menu a {
+
+.header_content .menu .menuStyle {
   color: #000;
   font-weight: 400;
   line-height: 36px;
@@ -126,9 +143,12 @@ header {
   border: 2px solid transparent;
   padding: 0px 16px;
   transition: all .3s;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.header_content .menu a:hover {
+.header_content .menu .menuStyle:hover {
   border: 2px solid #ffc222;
   box-shadow: 0 0 7px rgba(56, 44, 44, 0.5)
 }
@@ -148,6 +168,11 @@ header {
   height: 300px;
   color: #fff;
 }
+.window_ank .window_ank_text{
+  width: 300px;
+  font-size: 18px;
+  line-height: 25px;
+}
 
 .window_ank .window_ank_log img {
   top: 20px;
@@ -157,6 +182,48 @@ header {
   box-shadow: 0 0 5px 3px #000;
 }
 
+.window_ank .window_ank_btn{
+  margin: 10% auto;
+  width: 200px;
+  height: 50px;
+  border: 1px solid ;
+  border-color: #65ccc8 #2aa5a0 #24aba6 #64c0bc;
+  outline: none;
+  background: #2ca5a0 linear-gradient(#639f9c, #42a7a3 50%, #2aa5a0);
+  box-shadow: inset rgba(255,255,255,.2) 1px 1px;
+  border-radius: 20px;
+  padding: .7em 0;  
+  cursor: pointer;
+  box-shadow: 0 10px 18px rgba(0,0,0,.5);
+}
+.window_ank a{ 
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  margin: 10% 30%;
+}
+.window_ank .window_ank_btn:hover{
+  color: rgb(255,255,255);
+  background-image: linear-gradient(#6ec0bc, #56c6c1 50%, #1cada8);
+}
+
+.window_ank .window_ank_btn:active {
+  color: rgb(255,255,255);
+  border-color: #2970a9;
+  background-image: linear-gradient(#5796c8, #6aa2ce);
+  box-shadow: none;
+  box-shadow: 0 10px 18px rgba(0,0,0,.5);
+}
+
+.window_ank .window_ank_btn p{
+  text-align: center;
+  font-size: 20px;
+  text-shadow: #000 0 2px 4px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+  white-space: pre-line;
+}
 /*  */
 
 .welcome {
@@ -241,11 +308,6 @@ header {
   background-color: #fff;
   border-radius: 2%;
   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
-  /* background-color: rgb(102, 102, 102);
-  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3),
-    -23px 0 20px -23px rgba(255, 255, 255, 0.6),
-    23px 0 20px -23px rgba(255, 255, 255, 0.6),
-    inset 0 0 40px rgba(255, 255, 255, 0.1); */
 }
 
 .aboutMe .aboutMe_photo {
@@ -379,4 +441,48 @@ header {
   height: 100%;
   list-style: none;
   text-decoration: none;
+}
+
+footer{
+  min-height: 200px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+footer .contact_content {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+footer .contact_content .contact_text{
+  margin: 0 auto;
+  color: #fff;
+}
+footer .contact_content .contact_text a{
+  list-style: none;
+  color: #fff;
+}
+
+footer .contact_content .contact_social{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .contact_content .contact_social .social_box{
+  display: inline;
+}
+footer .contact_content .contact_social .social_box a{
+  height: 60px;
+
+}
+footer .contact_content .contact_social .social_box img{
+  float: right;
+  height: 100%;
+}
+footer .contact_content .contact_social .social_box svg{
+  fill: rgb(255, 255, 255);
+  height: 100%;
 }
