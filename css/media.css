@@ -161,6 +161,7 @@
     }
     .welcome .welcome_content .welcome_cloud_text{
         animation: none;
+        padding-left: 10px;
     }
     .welcome .welcome_content .welcome_cloud_text h2{
         font-size: .8em;
@@ -171,7 +172,36 @@
 }
 
 
-/* @media(max-width:575px) {
+@media(max-width:690px) {
+    .container {
+        max-width: none;
+    }
+.welcome .welcome_content{
+    grid-template-columns: 1fr;
+}
+.welcome .welcome_content .welcome_cloud_text{
+    order: 1;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.welcome .welcome_content .welcome_img{
+    order: 2;
+}
+footer{
+    display: none;
+}
+} 
+@media(max-width:575px) {
         .container {
-            max-width: 970px;
-        }} */
+            max-width: none;
+        }
+    .header .header_top{
+        display: none;
+    }
+    .skills .skills_content .skills_box .box img{
+        width: 125px;
+    }
+    .skills .skills_content .skills_text{
+        text-align: center;
+    }
+    }
