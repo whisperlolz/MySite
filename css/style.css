@@ -251,7 +251,7 @@ z-index: 100;
 .welcome {
   margin: 0 auto;
   padding: 60px 5% 0px 5%;
-  min-height: 450px;
+  min-height: 300px;
   
 }
 .welcome .welcome_content {
