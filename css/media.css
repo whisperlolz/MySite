@@ -201,7 +201,26 @@ footer{
     .skills .skills_content .skills_box .box img{
         width: 125px;
     }
+    .skills .skills_content .skills_box{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .skills .skills_content .skills_box .box{
+    margin-bottom: 10px;
+    margin-top: 4%;
+    }
     .skills .skills_content .skills_text{
         text-align: center;
     }
+    .skills{
+        min-height: 100px;
     }
+    .skills .skills_content{
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+  
