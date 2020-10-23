@@ -1,0 +1,135 @@
+@media(max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .welcome_cloud_text h1 {
+        font-size: 2.75em !important;
+
+
+    }
+
+    .welcome .welcome_content .welcome_cloud_text h2 {
+        font-size: 1em !important;
+    }
+
+
+   
+    @media(max-width:992px) {
+        .container {
+            max-width: 750px;
+        }
+
+        .skills .skills_content {
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+
+        }
+
+        .skills .skills_content .box {
+            display: grid;
+            grid-template-columns: none;
+            justify-content: center;
+            align-items: center;
+            grid-auto-rows: 100px;
+            margin-top: 4%;
+        }
+
+        .skills .skills_content .box img {
+            width: 100%;
+        }
+
+        .skills .skills_content .skills_text {
+            margin-top: 2%;
+        }
+
+        .skills .skills_content .skills_text h1 {
+            text-align: center;
+        }
+
+        .window_ank {
+            height: 200px;
+        }
+        .projects_box{
+            filter: brightness(100%);
+        }
+        .projects_box:nth-child(1) {
+            grid-column: 1/1;
+            grid-row: 1/1;
+        }
+
+
+    }
+
+    @media(max-width:767px) {
+        .container {
+            max-width: none;
+        }
+.header_content{
+    background-color: rgba(0, 0, 0, .5);
+}
+        .menu .menu_big ul {
+            display: none;
+        }
+        .menu .hamburger_wrapper{
+            height: 30px;
+            
+        }
+        .menu .hamburger {
+            position: relative;
+            display: block;
+            margin-right: 50px;
+            width: 50px;
+            height: 8px;
+            background-color: #000;
+            border-radius: 10px;
+            
+        }
+        .menu .hamburger::before{
+            position: absolute;
+            left: 0;
+            top: -12px;
+            content: '';
+            display: block;
+            margin-right: 50px;
+            width: 50px;
+            height: 8px;
+            background-color: #000;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in ,top 0.2s linear 0.2s;
+        }
+        .menu .hamburger::after{
+            position: absolute;
+            left: 0;
+            top: 12px;
+            content: '';
+            display: block;
+            margin-right: 50px;
+            width: 50px;
+            height: 8px;
+            background-color: #000;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in ,top 0.2s linear 0.2s;
+        }
+    .menu .hamburger_active{
+        background-color: transparent;
+    }
+    .menu .hamburger_active::before{
+        transform: rotate(45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+    .menu .hamburger_active::after{
+        transform: rotate(-45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+    
+    }
+}
+ /* @media(max-width:575px) {
+        .container {
+            max-width: 970px;
+        }} */

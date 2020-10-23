@@ -11,6 +11,8 @@
     let skillsText = skills.querySelector('.skills_text');
     let projects = document.querySelector('.projects');
     let contact = document.querySelector('footer')
+    let menu = document.querySelector('.menu');
+    let hamburger = menu.querySelector('.hamburger');
 
 
         $(window).scroll(function () {
@@ -35,7 +37,11 @@
             
         });    
     };
-    
+
+    menu.querySelector('.hamburger_wrapper').onclick = function () {
+        hamburger.classList.toggle('hamburger_active');
+        };
+        
     
     siteNav('#aboutMe', aboutMe);
     siteNav('#skills', skills);
