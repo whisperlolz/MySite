@@ -179,7 +179,7 @@ footer .contact_content
     .header_content .header_content-inner .menu .menu_big ul{
         display: none;
     }
-
+/* HAMBURGER */
     .menu .hamburger_wrapper {
         height: 30px;
         display: flex;
@@ -187,7 +187,6 @@ footer .contact_content
         align-items: center;
         margin-right: 10px;
     }
-
     .menu .hamburger {
         position: relative;
         display: block;
@@ -226,20 +225,89 @@ footer .contact_content
 
     .menu .hamburger_active {
         background-color: transparent;
+        position: fixed;
+        z-index: 10;
+        right: 70%;
+        transition: 1s;
     }
 
     .menu .hamburger_active::before {
+        z-index: 999;
         transform: rotate(45deg);
         top: 0;
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: #000;
     }
 
     .menu .hamburger_active::after {
+        z-index: 999;
         transform: rotate(-45deg);
         top: 0;
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: #000;
     }
+    .menu_big {
+        display: none;
+      }
+    
+      /* HAMBURGER MENU*/
 
+.hamburger_menu {
+    background-color: #ffffff;
+    top: 0;
+    right: -75%;
+    z-index: 5;
+    position: fixed;
+    min-width: 75%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 75% 1fr 1fr;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 0 2px 3px #000;
+    transition: 1s;
+  }
+  
+  .hamburger_menu_active{
+    right: 0;
+    transition: 1s;
+  }
+  .hamburger_menu .hamburger_menu_nav {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  
+  .hamburger_menu_contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+  
+  }
+  
+  .hamburger_menu_btn {
+    background-color: #ffc222;
+    border: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.3em;
+  
+  }
+  
+  
+  
+  /*  */
+
+  .header_content{
+      z-index: 0;
+  }
+  .header_fixed{
+    z-index: 0;
+}
     .header_content .header_logo {
         display: none;
     }

@@ -41,12 +41,13 @@
     };
 
     menu.querySelector('.hamburger_wrapper').onclick = function () {
-        hamburgerMenu.classList.add('hamburger_menu_active');
+        hamburgerMenu.classList.toggle('hamburger_menu_active');
         hamburger.classList.toggle('hamburger_active');
-        };
-    $(aboutMe).click(function () {
-        hamburgerMenu.classList.remove('hamburger_menu_active');
-    });
+    };
+    
+    // $(aboutMe).click(function () {
+    //     hamburgerMenu.classList.remove('hamburger_menu_active');
+    // });
     
     siteNav('#aboutMe', aboutMe);
     siteNav('#skills', skills);
