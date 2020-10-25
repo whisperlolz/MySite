@@ -167,13 +167,13 @@ header {
 }
 
 .hamburger_menu {
-  background-color: #0000003f;
+  background-color: #0000006e;
   top: 0;
   right: 0;
   z-index: 999;
   position: fixed;
-  max-width: 90%;
-  min-width: 90%;
+  max-width: 70%;
+  min-width: 70%;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 75% 1fr 1fr;
