@@ -167,19 +167,18 @@ header {
 }
 
 .hamburger_menu {
-  background-color: #0000006e;
+  background-color: #ffffff;
   top: 0;
   right: 0;
   z-index: 999;
   position: fixed;
-  max-width: 70%;
-  min-width: 70%;
+  min-width: 75%;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 75% 1fr 1fr;
-  color: #fff;
+  color: rgb(0, 0, 0);
   box-shadow:2px 0 2px 3px #000;
-  text-shadow: 1px 1px 2px black;
+  /* text-shadow: 1px 1px 2px black; */
 }
 
 .hamburger_menu .hamburger_menu_nav {
@@ -206,7 +205,7 @@ header {
   text-align: center;
   font-weight: 900;
   font-size: 1.3em;
-  box-shadow: 0 14px 28px 2px rgb(0, 0, 0), 0 10px 10px rgb(0, 0, 0);
+  
 }
 
 
