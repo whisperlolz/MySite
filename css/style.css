@@ -167,18 +167,19 @@ header {
 }
 
 .hamburger_menu {
-  background-color: #817474;
+  background-color: #0000003f;
   top: 0;
   right: 0;
   z-index: 999;
   position: fixed;
-  max-width: 40%;
-  min-width: 40%;
+  max-width: 90%;
+  min-width: 90%;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 75% 1fr 1fr;
   color: #fff;
   box-shadow:2px 0 2px 3px #000;
+  text-shadow: 1px 1px 2px black;
 }
 
 .hamburger_menu .hamburger_menu_nav {
