@@ -19,8 +19,15 @@
 @media(max-width:992px) {
     .container {
         max-width: 750px;
+        margin: 0 auto;
     }
-
+    .header_content .header_logo {
+        display: none;
+        
+    }
+    .header_content .header_content-inner .menu{
+        margin: 0 auto;
+    }
     .skills .skills_content {
         margin-top: 2%;
         display: grid;
@@ -44,6 +51,8 @@
 
     .skills .skills_content .skills_text {
         margin-top: 2%;
+        padding-left: 0;
+        text-align: center;
     }
 
     .skills .skills_content .skills_text h1 {
@@ -69,8 +78,10 @@
 @media(max-width:767px) {
     .container {
         max-width: none;
+        margin: 0 auto;
+        padding: 0;
     }
-
+    
     .header_content {
         float: right;
         background-color: #000;
@@ -81,7 +92,9 @@
         padding: 0;
 
     }
-
+    .header .header_top{
+        display: none;
+    }
     .header_content .header_content-inner {
         display: block;
         float: right;
@@ -169,6 +182,18 @@
     .welcome .welcome_content .welcome_cloud_text p{
         font-size: .8em;
     }
+    .aboutMe .aboutMe_text{
+        padding: 60px 50px;
+    }
+    .skills .skills_content{
+        padding: 60px 50px;
+    }
+    .skills .skills_content .skills_box .box img{
+        width: 110px;
+    }
+    .projects {
+        padding: 20px 0;
+    }
 }
 
 
@@ -199,11 +224,12 @@ footer{
         display: none;
     }
     .skills .skills_content .skills_box .box img{
-        width: 125px;
+        width: 100px;
     }
     .skills .skills_content .skills_box{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 50px;
+        margin-bottom: 10px;
     }
     .skills .skills_content .skills_box .box{
     margin-bottom: 10px;
@@ -211,6 +237,7 @@ footer{
     }
     .skills .skills_content .skills_text{
         text-align: center;
+        padding-left: 0;
     }
     .skills{
         min-height: 100px;
@@ -223,4 +250,36 @@ footer{
         align-items: center;
     }
     }
-  
+    @media(max-width:375px) {
+        .welcome .welcome_content .welcome_cloud_text h2{
+            font-size: .8em !important;
+        }
+        .skills .skills_content .skills_text h1{
+            font-size: 1.5em;
+        }
+        .skills .skills_content .skills_text p{
+            font-size: 1em;
+        }
+    }
+
+    @media(max-width:310px){
+        .welcome .welcome_content .welcome_cloud_text h1{
+            font-size: 1em !important;
+            margin-bottom: 0;
+        }
+        .welcome .welcome_content .welcome_cloud_text h2{
+            font-size: .6em !important;
+        }
+        .welcome .welcome_content .welcome_cloud_text p{
+            font-size: .5em !important;
+        }
+        .aboutMe .aboutMe_text h1{
+            font-size: 2em !important;
+        }
+        .aboutMe .aboutMe_text p{
+            font-size: 1em;
+        }
+        .projects_content_text{
+            font-size: 1em ;
+        }
+    }
