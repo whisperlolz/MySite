@@ -249,7 +249,6 @@ footer .contact_content
     }
 
     .welcome .welcome_content .welcome_cloud_text {
-        /* animation: none; */
         padding-left: 10px;
     }
 
@@ -301,6 +300,7 @@ footer .contact_content
         order: 1;
         text-align: center;
         padding-bottom: 20px;
+        animation: typing 2.8s steps(40, end), blink-caret .65s step-end 3;
     }
 
     .welcome .welcome_content .welcome_img {
@@ -366,7 +366,7 @@ footer .contact_content
 }
 @media(max-width:440px){
     .welcome .welcome_content .welcome_cloud_text{
-        padding:0px;
+        padding-bottom:20px;
     }
     .welcome .welcome_content .welcome_cloud_text h2{
         font-size: .8em !important;
