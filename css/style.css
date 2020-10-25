@@ -173,7 +173,7 @@ header {
   z-index: 999;
   position: fixed;
   min-width: 75%;
-  min-height: 100vh;
+  max-height: 100vh;
   display: grid;
   grid-template-rows: 75% 1fr 1fr;
   color: rgb(0, 0, 0);
