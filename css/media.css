@@ -1,6 +1,33 @@
 @media(max-width:1200px) {
+    
     .container {
         max-width: 970px;
+    }
+    .welcome{
+        min-height: auto;
+        padding: 30px 50px 30px 50px;
+    }
+    .aboutMe{
+        min-height: auto;
+    }
+    .skills{
+        min-height: auto;
+    }
+    .projects{
+        min-height: auto;
+        padding: 4px 0 20px 0;
+    }
+    .aboutMe .aboutMe_text{
+        padding: 12px 50px 30px 50px;
+    }
+    .skills .skills_content{
+        padding: 30px 0;
+    }
+    footer {
+        min-height: auto;
+    }
+    footer .contact_content{
+        padding: 30px 50px;
     }
 
     .welcome_cloud_text h1 {
@@ -21,14 +48,36 @@
         max-width: 750px;
         margin: 0 auto;
     }
-
+    .welcome{
+        min-height: auto;
+        padding: 30px 50px 30px 50px;
+    }
+    .aboutMe{
+        min-height: auto;
+    }
+    .skills{
+        min-height: auto;
+    }
+    .projects{
+        min-height: auto;
+        padding: 4px 0 20px 0;
+    }
+    .aboutMe .aboutMe_text {
+        padding: 12px 50px 30px 50px;
+    }
+    
     .header_content .header_logo {
         display: none;
 
     }
 
-    .header_content .header_content-inner .menu {
-        margin: 0 auto;
+    .header_content .header_content-inner .menu .menu_big{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .header_content .header_content-inner .menu .menu_big ul{
+        display: flex;
+        justify-content: space-around;
     }
 
     .skills .skills_content {
@@ -36,7 +85,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-
+        padding: 60px 0 25px 0;
     }
 
     .skills .skills_content .box {
@@ -53,7 +102,7 @@
     }
 
     .skills .skills_content .skills_text {
-        margin-top: 2%;
+        margin-top: 3%;
         padding-left: 0;
         text-align: center;
     }
@@ -74,8 +123,13 @@
         grid-column: 1/1;
         grid-row: 1/1;
     }
-
-
+    footer{
+        min-height: auto;
+    }
+footer .contact_content
+{
+    padding: 20px 10px;
+}
 }
 
 @media(max-width:767px) {
@@ -83,7 +137,23 @@
         max-width: none;
         margin: 0 auto;
         padding: 0;
+        
     }
+    .welcome{
+        min-height: auto;
+        padding: 80px 50px 30px 50px;
+    }
+    .aboutMe{
+        min-height: auto;
+    }
+    .skills{
+        min-height: auto;
+    }
+    .projects{
+        min-height: auto;
+        padding-top: 7px;
+    }
+    
 
     .header_content {
         float: right;
@@ -106,7 +176,7 @@
         padding-top: 10px;
     }
 
-    .menu .menu_big ul {
+    .header_content .header_content-inner .menu .menu_big ul{
         display: none;
     }
 
@@ -179,7 +249,7 @@
     }
 
     .welcome .welcome_content .welcome_cloud_text {
-        animation: none;
+        /* animation: none; */
         padding-left: 10px;
     }
 
@@ -192,19 +262,28 @@
     }
 
     .aboutMe .aboutMe_text {
-        padding: 60px 50px;
+        padding: 12px 50px 30px 50px;
     }
 
     .skills .skills_content {
-        padding: 60px 50px;
+        padding: 30px 50px;
     }
 
     .skills .skills_content .skills_box .box img {
         width: 110px;
     }
+    .skills .skills_content .skills_text{
+        margin-top: 1%;
+    }
 
     .projects {
         padding: 20px 0;
+    }
+    footer{
+        min-height: auto;
+    }
+    footer .contact_content{
+        padding: 30px 50px;
     }
 }
 
@@ -227,10 +306,16 @@
     .welcome .welcome_content .welcome_img {
         order: 2;
     }
-
+    .projects{
+        padding: 1px 0;
+    }
+    .projects_content_text{
+        padding: 0;
+    }
     footer {
         display: none;
     }
+
 }
 
 @media(max-width:575px) {
@@ -268,7 +353,7 @@
     }
 
     .skills .skills_content {
-        padding-top: 30px;
+        padding-top: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -279,10 +364,31 @@
         font-size: 1.5en;
     }
 }
+@media(max-width:440px){
+    .welcome .welcome_content .welcome_cloud_text{
+        padding:0px;
+    }
+    .welcome .welcome_content .welcome_cloud_text h2{
+        font-size: .8em !important;
+    }
+}
     @media(max-width:375px) {
+        
+        .welcome .welcome_content .welcome_cloud_text h1{
+            margin: 0.5em 0;
+        }
         .welcome .welcome_content .welcome_cloud_text h2 {
             font-size: .8em !important;
+            line-height: 10px;
         }
+        .welcome .welcome_content .welcome_cloud_text p {
+          
+            line-height: 15px;
+        }
+        .welcome .welcome_content .welcome_cloud_text{
+            margin-bottom: 10px;
+        }
+        
         .skills .skills_content .skills_text{
             margin: 0;
         }
