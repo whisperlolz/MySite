@@ -13,6 +13,8 @@
     let contact = document.querySelector('footer')
     let menu = document.querySelector('.menu');
     let hamburger = menu.querySelector('.hamburger');
+    let hamburgerMenu = document.querySelector('.hamburger_menu');
+    let hamburgerMenuActive = document.querySelector('.hamburger_menu_active');
 
 
         $(window).scroll(function () {
@@ -39,9 +41,12 @@
     };
 
     menu.querySelector('.hamburger_wrapper').onclick = function () {
+        hamburgerMenu.classList.add('hamburger_menu_active');
         hamburger.classList.toggle('hamburger_active');
         };
-        
+    $(aboutMe).click(function () {
+        hamburgerMenu.classList.remove('hamburger_menu_active');
+    });
     
     siteNav('#aboutMe', aboutMe);
     siteNav('#skills', skills);
