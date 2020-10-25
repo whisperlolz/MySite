@@ -300,7 +300,7 @@ footer .contact_content
         order: 1;
         text-align: center;
         padding-bottom: 20px;
-        animation: typing 2.8s steps(40, end), blink-caret .65s step-end 3;
+        animation: typing 2.3s steps(40, end), blink-caret .65s step-end 3;
     }
 
     .welcome .welcome_content .welcome_img {
