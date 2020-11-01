@@ -248,7 +248,7 @@
         background-color: transparent;
         position: fixed;
         z-index: 10;
-        right: 70%;
+        right: 68%;
         transition: .5s;
     }
 
@@ -296,7 +296,7 @@
 
     .hamburger_menu .hamburger_menu_nav {
         display: grid;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -311,6 +311,13 @@
         align-content: center;
 
     }
+     .hamburger_menu_contact .ham_box{
+         width: 150px;
+     }
+
+     .hamburger_menu_contact .ham_box img{
+         width: 100%;
+     }
 
     .hamburger_menu_btn {
         background-color: #ffc222;
@@ -318,7 +325,8 @@
         text-align: center;
         font-weight: 900;
         font-size: 1.3em;
-
+        width: 100%;
+        height: 100%;
     }
 
 
@@ -331,6 +339,7 @@
 
     .header_fixed {
         z-index: 0;
+        position: static;
     }
 
     .header_content .header_logo {
@@ -368,6 +377,10 @@
     .skills .skills_content .skills_text {
         margin-top: 1%;
     }
+    .skills .skills_text_animation{
+        animation: none;
+
+    }
 
     .projects {
         padding: 20px 0;
@@ -404,9 +417,10 @@
     }
 
     .projects {
-        padding: 1px 0;
+        padding: 1px 0 25px 0;
+        
     }
-
+    
     .projects_content_text {
         padding: 0;
     }
@@ -420,6 +434,19 @@
 @media(max-width:575px) {
     .container {
         max-width: none;
+    }
+
+    .menu .hamburger_active {
+    right: 66%;
+    }
+        .menu .hamburger {
+            width: 30px;
+        }
+    .menu .hamburger::before{
+        width: 30px;
+    }
+    .menu .hamburger::after{
+        width: 30px;
     }
 
     .header .header_top {
@@ -465,6 +492,9 @@
 }
 
 @media(max-width:440px) {
+     .hamburger_menu_contact .ham_box {
+         width: 100px;
+     }
     .welcome .welcome_content .welcome_cloud_text {
         padding-bottom: 20px;
     }
@@ -475,7 +505,9 @@
 }
 
 @media(max-width:375px) {
-
+.menu .hamburger_active {
+    right: 64%;
+}
     .welcome .welcome_content .welcome_cloud_text h1 {
         margin: 0.5em 0;
     }
@@ -522,6 +554,9 @@
 }
 
 @media(max-width:310px) {
+     .hamburger_menu_contact .ham_box {
+         width: 75px;
+     }
     .welcome .welcome_content .welcome_cloud_text h1 {
         font-size: 1em !important;
         margin-bottom: 0;

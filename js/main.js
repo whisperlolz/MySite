@@ -14,7 +14,11 @@
     let menu = document.querySelector('.menu');
     let hamburger = menu.querySelector('.hamburger');
     let hamburgerMenu = document.querySelector('.hamburger_menu');
-    let hamburgerMenuActive = document.querySelector('.hamburger_menu_active');
+    let hamMenu = document.querySelector('.hamburger_menu_nav');
+    let hamAbout = hamMenu.querySelector('#aboutMe');
+    let hamSkills = hamMenu.querySelector('#skills');
+    let hamProjects = hamMenu.querySelector('#projects');
+    
 
 
         $(window).scroll(function () {
@@ -36,7 +40,6 @@
             console.log(content.offsetTop + ' ' + header.offsetHeight + ' ' + headerTop.offsetHeight);
             let b = content.offsetTop - header.offsetHeight - headerTop.offsetHeight + 20;
             window.scrollTo(0, b);
-            
         });    
     };
 
@@ -44,15 +47,16 @@
         hamburgerMenu.classList.toggle('hamburger_menu_active');
         hamburger.classList.toggle('hamburger_active');
     };
-    
-    // $(aboutMe).click(function () {
-    //     hamburgerMenu.classList.remove('hamburger_menu_active');
-    // });
-    
+
+
     siteNav('#aboutMe', aboutMe);
     siteNav('#skills', skills);
     siteNav('#projects', projects);
     siteNav('#contacts', contact);
+    siteNav(hamAbout, aboutMe);
+    siteNav(hamSkills, skills);
+    siteNav(hamProjects, projects);
+
     
 
     
