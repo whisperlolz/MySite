@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+p{
+  letter-spacing: 1px;
+}
 a {
   text-decoration: none;
   display: inline-block;
@@ -306,7 +308,10 @@ header {
   max-width: 100%;
   color: #fff;
 }
-
+.aboutMe .aboutMe_text p{
+  margin: 0 auto;
+  max-width: 600px;
+}
 .skills {
   max-width: 100%;
   min-height: 400px;
